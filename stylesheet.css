@@ -20,6 +20,8 @@ img {
 
 
 
+
+
 /*---------section--------------*/
 
 section {
@@ -29,19 +31,8 @@ section {
 
 /*------section slut-----------*/
 
-<style > body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: "Lato", sans-serif;
-}
+body {}
 
-
-
-body,
 html {
     height: 100%;
     line-height: 1.8;
@@ -64,7 +55,6 @@ html {
     background-size: cover;
 }
 
-/* First image (Logo. Full height) */
 
 .bgimg-1 {
 
@@ -72,14 +62,12 @@ html {
     min-height: 100%;
 }
 
-/* Second image (Portfolio) */
 
 .bgimg-2 {
     background-image: url("billeder/AdobeStock_40190829.jpeg");
     min-height: 250px;
 }
 
-/* Third image (Contact) */
 
 .bgimg-3 {
     background-image: url(/billeder/coffee-571245571.jpg);
@@ -96,14 +84,7 @@ html {
     min-height: 250px;
 }
 
-.w3-wide {
-    letter-spacing: 10px;
-}
 
-.w3-hover-opacity {
-
-    cursor: pointer;
-}
 
 /* Turn off parallax scrolling for tablets and phones */
 
@@ -340,6 +321,26 @@ html {
 
 footer {
     background-color: #252525;
+    color: #f4e5c8;
+
+}
+
+footer p{
+    font-size: 1.9em;
+    color: #f4e5c8;
+    text-align: center;
+
+}
+
+footer .til_top{
+    margin: 20px;
+    padding-top: 20px;
+}
+
+
+
+#navDemo{
+    background-color: #f4e5c8;
 }
 
 
