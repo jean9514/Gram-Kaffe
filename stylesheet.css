@@ -1,3 +1,25 @@
+/*generelt*/
+
+p {
+    margin: 20px;
+    text-align: justify;
+    color: #3f2504;
+
+
+}
+
+iframe {
+    margin: 20px;
+}
+
+img {
+    margin: 20px;
+}
+
+
+
+
+
 /*---------section--------------*/
 
 section {
@@ -22,15 +44,20 @@ h6 {
 body,
 html {
     height: 100%;
-    color: #000000;
     line-height: 1.8;
+    background-color: #F4e5c8;
+    font-family: "Lato", sans-serif;
+
+
 }
 
 /* Create a Parallax Effect */
 
 .bgimg-1,
 .bgimg-2,
-.bgimg-3 {
+.bgimg-3,
+.bgimg-4,
+.bgimg-5 {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -48,15 +75,25 @@ html {
 /* Second image (Portfolio) */
 
 .bgimg-2 {
-    background-image: url("/billeder/coffee-571245571.jpg");
-    min-height: 400px;
+    background-image: url("billeder/AdobeStock_40190829.jpeg");
+    min-height: 250px;
 }
 
 /* Third image (Contact) */
 
 .bgimg-3 {
-    background-image: url("billeder/coffee-571245571.jpg");
-    min-height: 400px;
+    background-image: url(/billeder/coffee-571245571.jpg);
+    min-height: 250px;
+}
+
+.bgimg-4 {
+    background-image: url(/billeder/espresso-ground-coffee-beans-1296x728.jpg);
+    min-height: 250px;
+}
+
+.bgimg-5 {
+    background-image: url(/billeder/Screenshot_20180315-144950.jpg);
+    min-height: 250px;
 }
 
 .w3-wide {
@@ -64,6 +101,7 @@ html {
 }
 
 .w3-hover-opacity {
+
     cursor: pointer;
 }
 
@@ -72,10 +110,24 @@ html {
 @media only screen and (max-device-width: 1024px) {
     .bgimg-1,
     .bgimg-2,
-    .bgimg-3 {
+    .bgimg-3,
+    .bgimg-4,
+    .bgimg-5 {
         background-attachment: scroll;
     }
 }
+
+
+
+#logo .logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+
+
 
 
 /*----------- OM SECTION -----------*/
@@ -84,11 +136,14 @@ html {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 20px;
+
 
 }
 
 #om .column {
     width: 50%;
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -102,6 +157,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 
@@ -121,6 +177,8 @@ html {
     width: 100%;
 }
 
+
+
 /*--------------OM SLUT ------------------*/
 
 /*------------KAFFEN SECTION -------------*/
@@ -129,6 +187,7 @@ html {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 20px;
 }
 
 #kaffen .column_wide {
@@ -151,6 +210,7 @@ html {
 #kaffen .txt {
     width: 50%;
 
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -161,6 +221,7 @@ html {
 
 #kaffen .image {
     width: 50%;
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -170,13 +231,12 @@ html {
 }
 
 #kaffen img {
-    width: 100%;
+    width: 90%;
     height: auto;
 }
 
 #kaffen .bottom {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap-reverse;
@@ -185,6 +245,104 @@ html {
 
 /*-------KAFFEN SECTION SLUT -------*/
 
-/*-------
+/*-------FAIRTRADE SECTION START------*/
+
+#fairtrade .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#fairtrade .column_wide {
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    #fairtrade .column_wide {
+        width: 100%;
+    }
+}
+
+#fairtrade .top_row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#fairtrade .txt {
+    width: 50%;
+
+}
+
+@media only screen and (max-width: 600px) {
+    #fairtrade .txt {
+        width: 100%;
+    }
+}
+
+#fairtrade .image {
+    width: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+    #fairtrade .image {
+        width: 100%;
+    }
+}
+
+#fairtrade .middle_row {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: center;
+}
+
+#fairtrade img {
+    width: 95%;
+    height: auto;
+}
+
+#fairtrade .bottom_row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#fairtrade .bottom_row img {
+    width: 97%;
+}
+
+
+#billeder .image {
+    margin-bottom: 50px;
+}
+
+
+/*-------KONTAKT SECTION---------*/
+
+#kontakt .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+
+}
+
+#kontakt .w3-half {
+    margin-bottom: 10px;
+}
+
+
+/*-----------FOOTER-----------*/
+
+footer {
+    background-color: #252525;
+}
+
+
+
 
 </style >
