@@ -1,0 +1,190 @@
+/*---------section--------------*/
+
+section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*------section slut-----------*/
+
+<style > body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Lato", sans-serif;
+}
+
+
+
+body,
+html {
+    height: 100%;
+    color: #000000;
+    line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+
+.bgimg-1,
+.bgimg-2,
+.bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+
+.bgimg-1 {
+
+    background-image: url(billeder/v%C3%A6ltetkaffe.jpg);
+    min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+
+.bgimg-2 {
+    background-image: url("/billeder/coffee-571245571.jpg");
+    min-height: 400px;
+}
+
+/* Third image (Contact) */
+
+.bgimg-3 {
+    background-image: url("billeder/coffee-571245571.jpg");
+    min-height: 400px;
+}
+
+.w3-wide {
+    letter-spacing: 10px;
+}
+
+.w3-hover-opacity {
+    cursor: pointer;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+
+
+/*----------- OM SECTION -----------*/
+
+#om .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+#om .column {
+    width: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+    #om .column {
+        width: 100%;
+    }
+}
+
+
+#om .video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#om img {
+    width: 100%;
+    height: auto;
+
+}
+
+@media only screen and (max-width: 600px) {
+    #om img {
+        width: 100%;
+    }
+}
+
+#om .bottom {
+    width: 100%;
+}
+
+/*--------------OM SLUT ------------------*/
+
+/*------------KAFFEN SECTION -------------*/
+
+#kaffen .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#kaffen .column_wide {
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    #kaffen .column_wide {
+        width: 100%;
+    }
+}
+
+#kaffen .top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#kaffen .txt {
+    width: 50%;
+
+}
+
+@media only screen and (max-width: 600px) {
+    #kaffen .txt {
+        width: 100%;
+    }
+}
+
+#kaffen .image {
+    width: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+    #kaffen .image {
+        width: 100%;
+    }
+}
+
+#kaffen img {
+    width: 100%;
+    height: auto;
+}
+
+#kaffen .bottom {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+
+}
+
+/*-------KAFFEN SECTION SLUT -------*/
+
+/*-------
+
+</style >

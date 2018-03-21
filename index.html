@@ -5,12 +5,216 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <title>Gram Kaffe</title>
 </head>
 
 <body>
+    <!-- Navbar (sit on top)-->
+    <div class="w3-top">
+        <div class="w3-bar" id="myNavbar">
+            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+            <a href="#home" class="w3-bar-item w3-button">HJEM</a>
+            <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> OM</a>
 
-    <h1>test</h1>
+            <a href="#pictures" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> BILLEDER</a>
+
+
+            <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> KONTAKT</a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+        </div>
+
+        <!-- Navbar on small screens -->
+
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+            <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">OM</a>
+            <a href="#pictures" class="w3-bar-item w3-button" onclick="toggleFunction()">BILLEDER</a>
+            <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">KONTAKT</a>
+
+        </div>
+    </div>
+
+    <!-- First Parallax Image with Logo Text -->
+
+    <div class=" bgimg-1 w3-opacity-min" id="home">
+
+        <div class="w3-display-middle" style="white-space:nowrap;">
+            <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">GRAM <span class="w3-hide-small">KAFFE</span> </span>
+        </div>
+    </div>
+
+
+    <!-- Første section - OM -->
+    <section id="om">
+        <h3 class="w3-center">OM OS</h3>
+        <p class="w3-center"><em>Vi elsker kaffe</em></p>
+
+
+        <div class="sectionwrapper">
+
+            <div class="column">
+
+
+                <p>
+                    Lorem ipsum dolor sit amet, ius congue graecis no, te magna augue periculis eam, ut eam latine euripidis. Ferri graeci fabellas ea est, eam id ocurreret efficiendi. Vitae delectus explicari in pro, natum zril in nam, ad quo veri explicari persequeris. Est labore deseruisse ea, nam ornatus epicuri ea. Ex modo aeque vel. Tantas patrioque no sea. No quas alterum usu.
+                </p>
+
+            </div>
+
+            <div class="column video">
+                <img src="billeder/blackcoffee.jpg" alt="kaffe">
+            </div>
+
+
+
+            <div class="bottom">
+                <p>
+
+                    Lorem ipsum dolor sit amet, ius congue graecis no, te magna augue periculis eam, ut eam latine euripidis. Ferri graeci fabellas ea est, eam id ocurreret efficiendi. Vitae delectus explicari in pro, natum zril in nam, ad quo veri explicari persequeris. Est labore deseruisse ea, nam ornatus epicuri ea. Ex modo aeque vel. Tantas patrioque no sea. No quas alterum usu. Ut pri semper interesset, novum dissentiet necessitatibus ne quo. Mei maiorum ocurreret intellegam ut, vim sale dicta dicit eu. Utroque lucilius pertinacia cu eos. Sit ne salutatus percipitur. Odio tincidunt mea ne. Ut eum magna malis pertinax, ut mel paulo tollit electram, iusto ubique atomorum eam ad. In omnis adhuc repudiandae eam, pro admodum recusabo laboramus id, eum putent commune no. Quod falli periculis cu quo, adhuc gubergren gloriatur et duo. Et eam viris adipiscing, vel ea elit dolorem pericula. Ut eros tacimates indoctum sed, wisi definiebas ut vim. Mei ei odio sonet. Dicta labore per et, est in legere mucius concludaturque, an duo solum solet eruditi. Duo te libris ornatus. Sale augue ponderum in has, mel te altera verterem. Eos molestie neglegentur in. Feugiat complectitur nec ut, mea modo suas idque ne, aperiam tractatos no quo. Vis id oratio prodesset voluptatibus, in ius eius nonumes assentior, vel id fierent antiopam assentior. At sed iisque blandit laboramus, soleat mediocrem in qui. Lucilius oportere prodesset eos ex, quo facer oportere et. Id nam eius oporteat singulis, sit ei velit impedit, id per causae saperet phaedrum. Vidit ponderum dissentias his ei, tantas verterem periculis ne nec. Ea his vidisse detraxit, eu molestiae vulputate intellegam nec.
+
+                </p>
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+    <!------- Anden section - KAFFEN ----------->
+
+    <!--- Baggrundsbillede 2 sættes her --->
+
+    <div class="bgimg-2 w3-display-container w3-opacity-min">
+        <div class="w3-display-middle" style="white-space:nowrap;">
+            <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">KAFFEN<span class="w3-hide-small"></span> </span>
+        </div>
+    </div>
+
+    <!--- baggrundsbillede slut --->
+
+
+    <section id="kaffen">
+
+        <div class="sectionwrapper">
+
+            <div class="column_wide">
+
+                <div class="top">
+
+                    <div class="txt">
+                        <p>
+                            kinny, aftertaste, frappuccino, rich body et, coffee milk aroma dripper cultivar. Cinnamon galão americano wings body ristretto rich fair trade foam. In ut doppio, pumpkin spice, bar aftertaste ristretto cream and cinnamon mazagran. Percolator so kopi-luwak so dripper spoon viennese. White, qui mazagran shop americano in half and half est robust affogato breve. Carajillo galão extraction, cup pumpkin spice black decaffeinated brewed. Sugar spoon robust skinny french press café au lait filter sugar foam that siphon caffeine. Roast, french press, cortado, cream milk steamed acerbic mocha organic medium.
+
+                        </p>
+                    </div>
+
+                    <div class="image">
+
+                        <img src="billeder/coffee-571245571.jpg" alt="kaffe">
+
+                    </div>
+
+                </div>
+
+                <div class="bottom">
+
+                    <div class="image">
+                        <img src="billeder/v%C3%A6ltetkaffe.jpg" alt="kaf">
+                    </div>
+
+                    <div class="txt">
+                        Single shot espresso, iced breve white, half and half shop latte breve carajillo. A cultivar cortado white, café au lait steamed ut macchiato cream french press caffeine saucer. Half and half single shot cinnamon ristretto turkish, macchiato est at black that latte. Coffee aged java roast dark, coffee crema espresso galão dripper eu carajillo. Roast mug skinny fair trade extraction foam rich. Steamed, organic ut organic, acerbic filter so, crema pumpkin spice fair trade carajillo acerbic. Redeye, percolator beans redeye rich americano crema at iced id pumpkin spice foam. Single shot est, mug cappuccino, bar a flavour, bar beans affogato café au lait foam.
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        ´
+    </section>
+
+
+    <!-- Tredje section - FAIRTRADE -->
+
+    <section id="fairtrade">
+
+        <div class="sectionwrapper">
+
+            <div class="top_row">
+                <div class="txt">
+                </div>
+
+                <div class="image">
+                </div>
+            </div>
+
+            <div class="middle_row">
+
+                <div class="image">
+                </div>
+
+                <div class="txt">
+                </div>
+
+            </div>
+
+            <div class="bottom_row">
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Fjerde section - billeder -->
+
+    <section id="billeder">
+
+        <div class="sectionwrapper">
+
+            <div class="image">
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Femte section - Kontakt -->
+
+    <section id="kontakt">
+
+        <div class="sectionwrapper">
+
+            <div class="column">
+            </div>
+
+            <div class="column">
+            </div>
+
+            <div class="column">
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+
 </body>
 
 </html>
