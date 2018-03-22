@@ -17,11 +17,6 @@ img {
 }
 
 
-
-
-
-
-
 /*---------section--------------*/
 
 section {
@@ -98,7 +93,7 @@ html {
     }
 }
 
-
+/*---NAVBAR---*/
 
 #logo .logo {
     display: block;
@@ -325,25 +320,20 @@ footer {
 
 }
 
-footer p{
+footer p {
     font-size: 1.9em;
     color: #f4e5c8;
     text-align: center;
 
 }
 
-footer .til_top{
+footer .til_top {
     margin: 20px;
     padding-top: 20px;
 }
 
 
 
-#navDemo{
+#navDemo {
     background-color: #f4e5c8;
 }
-
-
-
-
-</style >
