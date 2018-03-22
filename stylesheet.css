@@ -134,9 +134,9 @@ html {
 
 }
 
-#om iframe{
-  width: 560px;
-    height:315px;
+#om iframe {
+    width: 560px;
+    height: 315px;
     border: 0;
 
 }
@@ -154,6 +154,13 @@ html {
 
 #om .bottom {
     width: 100%;
+}
+
+#om h2 {
+    font-family: "Lato", sans-serif;
+    color: #3f2504;
+    font-size: 1.5em;
+    padding-left: 31px;
 }
 
 
@@ -212,9 +219,12 @@ html {
     flex-wrap: wrap-reverse;
 }
 
-#kaffen h2 {
+
+#kaffen .txt h2 {
     color: #3f2504;
-    padding: 19px;
+    font-family: "Lato", sans-serif;
+    padding-left: 20px;
+
 }
 
 /*------- SECTION: FAIRTRAID ------*/
@@ -283,6 +293,16 @@ html {
     width: 97%;
 }
 
+#fairtrade .txt h2 {
+    color: #3f2504;
+    font-family: "Lato", sans-serif;
+    padding-left: 20px;
+}
+
+
+
+
+/*---------Section: billeder ------*/
 
 #billeder .image {
     margin-bottom: 50px;
