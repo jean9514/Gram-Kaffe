@@ -4,6 +4,7 @@ p {
     margin: 20px;
     text-align: justify;
     color: #3f2504;
+    font-family: "Lato", sans-serif;
 
 
 }
@@ -16,6 +17,22 @@ img {
     margin: 20px;
 }
 
+h1 {
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    /*    padding-left: 39px;*/
+    color: #3f2504;
+    padding-top: 20px;
+    text-align: center;
+}
+
+
+/*-------P-TEXT-----*/
+
+.w3-center {
+    font-size: 1.7em
+}
+
 
 /*---------section--------------*/
 
@@ -26,13 +43,11 @@ section {
 
 /*------section slut-----------*/
 
-body {}
-
 html {
     height: 100%;
     line-height: 1.8;
     background-color: #F4e5c8;
-    font-family: "Lato", sans-serif;
+
 
 
 }
@@ -52,10 +67,10 @@ html {
 
 
 .bgimg-1 {
-
-    background-image: url(billeder/v%C3%A6ltetkaffe.jpg);
-    min-height: 100%;
+    background-image: url("billeder/splash_logo_03.jpg");
+    min-height: 650px;
 }
+
 
 
 .bgimg-2 {
@@ -76,7 +91,7 @@ html {
 
 .bgimg-5 {
     background-image: url(/billeder/Screenshot_20180315-144950.jpg);
-    min-height: 250px;
+    min-height: 300px;
 }
 
 
@@ -94,15 +109,6 @@ html {
 }
 
 /*---NAVBAR---*/
-
-#logo .logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-}
-
-
 
 
 
@@ -179,8 +185,7 @@ html {
 #kaffen .top {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+
 }
 
 #kaffen .txt {
@@ -213,10 +218,12 @@ html {
 
 #kaffen .bottom {
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-wrap: wrap-reverse;
+}
 
+#kaffen h2 {
+    color: #3f2504;
+    padding: 19px;
 }
 
 /*-------KAFFEN SECTION SLUT -------*/
@@ -243,8 +250,7 @@ html {
 #fairtrade .top_row {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+
 }
 
 #fairtrade .txt {
@@ -271,8 +277,7 @@ html {
 #fairtrade .middle_row {
     display: flex;
     flex-wrap: wrap-reverse;
-    align-items: center;
-    justify-content: center;
+
 }
 
 #fairtrade img {
@@ -294,6 +299,14 @@ html {
 
 #billeder .image {
     margin-bottom: 50px;
+    padding-right: 35px;
+}
+
+#billeder h2 {
+    text-align: center;
+    color: #3f2504;
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
 
 
@@ -311,12 +324,17 @@ html {
     margin-bottom: 10px;
 }
 
+#kontakt .column_1 {
+    padding-top: 65px;
+}
+
 
 /*-----------FOOTER-----------*/
 
 footer {
     background-color: #252525;
     color: #f4e5c8;
+
 
 }
 
@@ -325,15 +343,12 @@ footer p {
     color: #f4e5c8;
     text-align: center;
 
+
+
 }
 
 footer .til_top {
     margin: 20px;
     padding-top: 20px;
-}
-
-
-
-#navDemo {
-    background-color: #f4e5c8;
+    text-align: center;
 }
