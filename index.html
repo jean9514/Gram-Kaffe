@@ -27,6 +27,14 @@
 </head>
 
 <body>
+
+    <header>
+        <nav>
+
+
+        </nav>
+
+    </header>
     <!--------- Navigationsbar i top af sitet -------->
 
     <div class="w3-top">
@@ -38,16 +46,20 @@
 
             <a href="#om" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> OM</a>
 
-            <a href="#kaffen" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-coffee"></i>Kaffen</a>
+            <a href="#kaffen" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-coffee"></i> Kaffen</a>
 
-            <a href="#fairtrade" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-leaf"></i>ØKOLOGI OG FAIRTRADE</a>
+            <a href="#fairtrade" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-leaf"></i> ØKOLOGI OG FAIRTRADE</a>
 
-            <a href="#billeder" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i>BILLEDER</a>
+            <a href="#billeder" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> BILLEDER</a>
+
+            <a href="webshop.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-shopping-cart"></i> WEBSHOP</a>
 
             <a href="#kontakt" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> KONTAKT</a>
-            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
 
-    </a>
+
+
+
+
         </div>
         <!------ Navigationsbar i mobiltilstand ------>
 
@@ -59,6 +71,9 @@
             <a href="#fairtrade" class="w3-bar-item w3-button" onclick="toggleFunction()">ØKOLOGI OG FAIRTRADE</a>
 
             <a href="#billeder" class="w3-bar-item w3-button" onclick="toggleFunction()">BILLEDER</a>
+
+            <a href="" class="w3-bar-item w3-button" onclick="toggleFunction()">WEBSHOP</a>
+
 
             <a href="#kontakt" class="w3-bar-item w3-button" onclick="toggleFunction()">KONTAKT</a>
 
@@ -109,8 +124,9 @@
 
     <!------- section - OM ------>
 
-    <h1>OM OS</h1>
+
     <section id="om">
+        <h1>OM OS</h1>
         <p class="w3-center"><em>Vi elsker kaffe</em></p>
 
         <div class="sectionwrapper">
@@ -316,43 +332,39 @@
 
 
 
+
+
             <div class="column_1">
 
-                <div class="column">
 
-
-                    <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Denmark, DK<br>
-                    <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Mobil: 20700250 <br>
-                    <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: jacob@gramkaffe.dk<br>
-                </div>
+                <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Denmark, DK<br>
+                <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Mobil: 20700250 <br>
+                <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: jacob@gramkaffe.dk<br>
+            </div>
 
 
 
-                <div class="column_2">
+            <div class="column_2">
 
-
-                    <div class="column">
-
-                        <p><em> Sving forbi til en kop <i class="fa fa-coffee"></i>, eller skriv en besked: </em></p>
-                        <form action="/action_page.php" target="_blank">
-                            <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-                                <div class="w3-half">
-                                    <input class="w3-input w3-border" type="text" placeholder="Navn" required name="Navn">
-                                </div>
-                                <div class="w3-half">
-                                    <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-                                </div>
-                            </div>
-                            <input class="w3-input w3-border" type="text" placeholder="Besked" required name="Besked">
-                            <button class="w3-button w3-black w3-right w3-section" type="submit">
+                <p><em> Sving forbi til en kop <i class="fa fa-coffee"></i>, eller skriv en besked: </em></p>
+                <form action="/action_page.php" target="_blank">
+                    <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                        <div class="w3-half">
+                            <input class="w3-input w3-border" type="text" placeholder="Navn" required name="Navn">
+                        </div>
+                        <div class="w3-half">
+                            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+                        </div>
+                    </div>
+                    <input class="w3-input w3-border" type="text" placeholder="Besked" required name="Besked">
+                    <button class="w3-button w3-black w3-right w3-section" type="submit">
           <i class="fa fa-paper-plane"></i> SEND BESKED
         </button>
 
-                        </form>
-                    </div>
-                </div>
+                </form>
             </div>
         </div>
+
     </section>
 
 
