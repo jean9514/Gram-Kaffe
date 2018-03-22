@@ -7,6 +7,7 @@ p {
     font-family: "Lato", sans-serif;
 
 
+
 }
 
 iframe {
@@ -16,6 +17,7 @@ iframe {
 img {
     margin: 20px;
 }
+
 
 h1 {
     font-family: "Lato", sans-serif;
@@ -41,18 +43,18 @@ section {
     margin: 0 auto;
 }
 
+
 /*------section slut-----------*/
 
 html {
     height: 100%;
     line-height: 1.8;
     background-color: #F4e5c8;
-
-
+    font-family: "Lato", sans-serif;
 
 }
 
-/* Create a Parallax Effect */
+/* Baggerundsbilleder: parallax scrolling*/
 
 .bgimg-1,
 .bgimg-2,
@@ -65,19 +67,16 @@ html {
     background-size: cover;
 }
 
-
 .bgimg-1 {
     background-image: url("billeder/splash_logo_03.jpg");
     min-height: 650px;
 }
 
 
-
 .bgimg-2 {
     background-image: url("billeder/AdobeStock_40190829.jpeg");
     min-height: 250px;
 }
-
 
 .bgimg-3 {
     background-image: url(/billeder/coffee-571245571.jpg);
@@ -95,8 +94,7 @@ html {
 }
 
 
-
-/* Turn off parallax scrolling for tablets and phones */
+/* Fjerner parallax scrolling på tablets og mobil */
 
 @media only screen and (max-device-width: 1024px) {
     .bgimg-1,
@@ -108,11 +106,8 @@ html {
     }
 }
 
-/*---NAVBAR---*/
 
-
-
-/*----------- OM SECTION -----------*/
+/*------SECTION: OM -----------*/
 
 #om .sectionwrapper {
     display: flex;
@@ -120,12 +115,10 @@ html {
     justify-content: space-between;
     padding: 20px;
 
-
 }
 
 #om .column {
     width: 50%;
-
 }
 
 @media only screen and (max-width: 600px) {
@@ -134,7 +127,6 @@ html {
     }
 }
 
-
 #om .video {
     display: flex;
     align-items: center;
@@ -142,11 +134,16 @@ html {
 
 }
 
+#om iframe{
+  width: 560px;
+    height:315px;
+    border: 0;
+
+}
 
 #om img {
     width: 100%;
     height: auto;
-
 }
 
 @media only screen and (max-width: 600px) {
@@ -160,10 +157,7 @@ html {
 }
 
 
-
-/*--------------OM SLUT ------------------*/
-
-/*------------KAFFEN SECTION -------------*/
+/*---------- SECTION: KAFFEN -------------*/
 
 #kaffen .sectionwrapper {
     display: flex;
@@ -190,8 +184,6 @@ html {
 
 #kaffen .txt {
     width: 50%;
-
-
 }
 
 @media only screen and (max-width: 600px) {
@@ -202,7 +194,6 @@ html {
 
 #kaffen .image {
     width: 50%;
-
 }
 
 @media only screen and (max-width: 600px) {
@@ -226,9 +217,7 @@ html {
     padding: 19px;
 }
 
-/*-------KAFFEN SECTION SLUT -------*/
-
-/*-------FAIRTRADE SECTION START------*/
+/*------- SECTION: FAIRTRAID ------*/
 
 #fairtrade .sectionwrapper {
     display: flex;
@@ -255,7 +244,6 @@ html {
 
 #fairtrade .txt {
     width: 50%;
-
 }
 
 @media only screen and (max-width: 600px) {
@@ -289,7 +277,6 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 #fairtrade .bottom_row img {
@@ -310,7 +297,7 @@ html {
 }
 
 
-/*-------KONTAKT SECTION---------*/
+/*-------SECTION: KONTAKT ---------*/
 
 #kontakt .sectionwrapper {
     display: flex;
@@ -329,13 +316,11 @@ html {
 }
 
 
-/*-----------FOOTER-----------*/
+/*----------- FOOTER -----------*/
 
 footer {
     background-color: #252525;
     color: #f4e5c8;
-
-
 }
 
 footer p {
@@ -343,12 +328,16 @@ footer p {
     color: #f4e5c8;
     text-align: center;
 
-
-
 }
 
 footer .til_top {
     margin: 20px;
     padding-top: 20px;
     text-align: center;
+
+}
+
+footer .sociale_medier {
+    text-align: center;
+    font-size: 2em;
 }

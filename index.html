@@ -27,7 +27,8 @@
 </head>
 
 <body>
-    <!-- Navbar (sit on top)-->
+    <!--------- Navigationsbar i top af sitet -------->
+
     <div class="w3-top">
         <div class="w3-bar" id="myNavbar">
             <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
@@ -37,85 +38,98 @@
 
             <a href="#om" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> OM</a>
 
-            <a href="#kaffen" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-coffee"></i> Kaffen</a>
+            <a href="#kaffen" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-coffee"></i>Kaffen</a>
 
-            <a href="#fairtrade" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-leaf"></i> ØKOLOGI OG FAIRTRADE</a>
+            <a href="#fairtrade" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-leaf"></i>ØKOLOGI OG FAIRTRADE</a>
 
-
-
-            <a href="#billeder" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> BILLEDER</a>
-
+            <a href="#billeder" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i>BILLEDER</a>
 
             <a href="#kontakt" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> KONTAKT</a>
             <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
 
     </a>
         </div>
-
-        <!-- Navbar on small screens -->
+        <!------ Navigationsbar i mobiltilstand ------>
 
         <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-            <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">OM</a>
+            <a href="#om" class="w3-bar-item w3-button" onclick="toggleFunction()">OM</a>
 
             <a href="#kaffen" class="w3-bar-item w3-button" onclick="toggleFunction()">KAFFEN</a>
 
             <a href="#fairtrade" class="w3-bar-item w3-button" onclick="toggleFunction()">ØKOLOGI OG FAIRTRADE</a>
 
-            <a href="#pictures" class="w3-bar-item w3-button" onclick="toggleFunction()">BILLEDER</a>
-            <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">KONTAKT</a>
+            <a href="#billeder" class="w3-bar-item w3-button" onclick="toggleFunction()">BILLEDER</a>
+
+            <a href="#kontakt" class="w3-bar-item w3-button" onclick="toggleFunction()">KONTAKT</a>
 
         </div>
     </div>
 
-    <!-- First Parallax Image with Logo Text -->
+
+    <!------ baggrundsbillede 1 med logo sættes her ------>
     <div class="bgimg-1 w3-display-container " id="home">
         <div class="w3-display-middle" style="white-space:nowrap;">
 
         </div>
     </div>
 
-    <!-- Første section - OM -->
 
+
+    <script>
+        function toggleFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+
+        window.onscroll = function() {
+            myFunction()
+        };
+
+        function myFunction() {
+            var navbar = document.getElementById("myNavbar");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+            } else {
+                navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+            }
+        }
+
+    </script>
+
+
+
+
+
+
+
+
+    <!------- section - OM ------>
+
+    <h1>OM OS</h1>
     <section id="om">
-
-        <h1>OM OS</h1>
-
-
-        <p class="w3-center"><em>Vi elsker kaffe!</em></p>
-
+        <p class="w3-center"><em>Vi elsker kaffe</em></p>
 
         <div class="sectionwrapper">
-
             <div class="column">
-
-
                 <p>
                     Lorem ipsum dolor sit amet, ius congue graecis no, te magna augue periculis eam, ut eam latine euripidis. Ferri graeci fabellas ea est, eam id ocurreret efficiendi. Vitae delectus explicari in pro, natum zril in nam, ad quo veri explicari persequeris. Est labore deseruisse ea, nam ornatus epicuri ea. Ex modo aeque vel. Tantas patrioque no sea. No quas alterum usu. Lorem ipsum dolor sit amet, ius congue graecis no, te magna augue periculis eam, ut eam latine euripidis. Ferri graeci fabellas ea est, eam id ocurreret efficiendi. Vitae delectus explicari in pro, natum zril in nam, ad quo veri explicari persequeris. Est labore deseruisse ea, nam ornatus epicuri ea. Ex modo aeque vel. Tantas patrioque no sea. No quas alterum usu.
                 </p>
-
             </div>
-
             <div class="column video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/gAFDeVvQddg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>Kaffe</iframe>
+                <iframe src="https://www.youtube.com/embed/gAFDeVvQddg" allowfullscreen></iframe>
             </div>
-
-
 
             <div class="bottom">
                 <p>
-
                     Lorem ipsum dolor sit amet, ius congue graecis no, te magna augue periculis eam, ut eam latine euripidis. Ferri graeci fabellas ea est, eam id ocurreret efficiendi. Vitae delectus explicari in pro, natum zril in nam, ad quo veri explicari persequeris. Est labore deseruisse ea, nam ornatus epicuri ea. Ex modo aeque vel. Tantas patrioque no sea. No quas alterum usu. Ut pri semper interesset, novum dissentiet necessitatibus ne quo. Mei maiorum ocurreret intellegam ut, vim sale dicta dicit eu. Utroque lucilius pertinacia cu eos. Sit ne salutatus percipitur. Odio tincidunt mea ne. Ut eum magna malis pertinax, ut mel paulo tollit electram, iusto ubique atomorum eam ad. In omnis adhuc repudiandae eam, pro admodum recusabo laboramus id, eum putent commune no. Quod falli periculis cu quo, adhuc gubergren gloriatur et duo. Et eam viris adipiscing, vel ea elit dolorem pericula. Ut eros tacimates indoctum sed, wisi definiebas ut vim. Mei ei odio sonet. Dicta labore per et, est in legere mucius concludaturque, an duo solum solet eruditi. Duo te libris ornatus. Sale augue ponderum in has, mel te altera verterem. Eos molestie neglegentur in. Feugiat complectitur nec ut, mea modo suas idque ne, aperiam tractatos no quo. Vis id oratio prodesset voluptatibus, in ius eius nonumes assentior, vel id fierent antiopam assentior. At sed iisque blandit laboramus, soleat mediocrem in qui. Lucilius oportere prodesset eos ex, quo facer oportere et. Id nam eius oporteat singulis, sit ei velit impedit, id per causae saperet phaedrum. Vidit ponderum dissentias his ei, tantas verterem periculis ne nec. Ea his vidisse detraxit, eu molestiae vulputate intellegam nec.
-
                 </p>
             </div>
-
         </div>
-
-
     </section>
-
-
-    <!------- Anden section - KAFFEN ----------->
 
     <!--- Baggrundsbillede 2 sættes her --->
 
@@ -125,36 +139,24 @@
         </div>
     </div>
 
-    <!--- baggrundsbillede slut --->
-
+    <!-------  section - KAFFEN ----------->
 
     <section id="kaffen">
-
         <div class="sectionwrapper">
 
-
-
             <div class="column_wide">
-
                 <div class="top">
-
                     <div class="txt">
                         <p>
                             kinny, aftertaste, frappuccino, rich body et, coffee milk aroma dripper cultivar. Cinnamon galão americano wings body ristretto rich fair trade foam. In ut doppio, pumpkin spice, bar aftertaste ristretto cream and cinnamon mazagran. Percolator so kopi-luwak so dripper spoon viennese. White, qui mazagran shop americano in half and half est robust affogato breve. Carajillo galão extraction, cup pumpkin spice black decaffeinated brewed. Sugar spoon robust skinny french press café au lait filter sugar foam that siphon caffeine. Roast, french press, cortado, cream milk steamed acerbic mocha organic medium.
-
                         </p>
                     </div>
-
                     <div class="image">
-
                         <img src="billeder/roasting-coffee.jpeg" alt="kaffe">
-
                     </div>
-
                 </div>
 
                 <div class="bottom">
-
                     <div class="image">
                         <img src="billeder/Gram%20kaffe%2018.jpg" alt="kaf">
                     </div>
@@ -163,20 +165,11 @@
                         <p>
                             Single shot espresso, iced breve white, half and half shop latte breve carajillo. A cultivar cortado white, café au lait steamed ut macchiato cream french press caffeine saucer. Half and half single shot cinnamon ristretto turkish, macchiato est at black that latte. Coffee aged java roast dark, coffee crema espresso galão dripper eu carajillo. Roast mug skinny fair trade extraction foam rich. Steamed, organic ut organic, acerbic filter so, crema pumpkin spice fair trade carajillo acerbic. Redeye, percolator beans redeye rich americano crema at iced id pumpkin spice foam. Single shot est, mug cappuccino, bar a flavour, bar beans affogato café au lait foam.
                         </p>
-
-
                     </div>
-
                 </div>
-
             </div>
-
         </div>
-
     </section>
-
-
-    <!-------Tredje section - FAIRTRADE -------->
 
     <!--- Baggrundsbillede 3 sættes her --->
 
@@ -186,69 +179,41 @@
         </div>
     </div>
 
-    <!--- baggrundsbillede slut --->
-
+    <!------- Section - FAIRTRADE -------->
 
     <section id="fairtrade">
-
-
         <div class="sectionwrapper">
             <div class="column_wide">
-
                 <div class="top_row">
                     <div class="txt">
-
                         <p>
                             Macchiato kopi-luwak doppio, crema ristretto cappuccino aged crema mocha. Java cup steamed, milk extra ut macchiato caramelization. Trifecta, barista caffeine espresso instant wings sit java so turkish. Affogato, doppio cinnamon affogato, cortado, seasonal cappuccino black viennese black. Dripper macchiato, skinny cortado pumpkin spice acerbic trifecta flavour. White frappuccino latte spoon at organic plunger pot half and half. Pumpkin spice cup percolator plunger pot french press, crema breve aromatic rich caramelization cream organic. Wings, coffee, qui coffee cortado cappuccino percolator fair trade. Decaffeinated, to go dripper cinnamon roast froth id breve seasonal fair trade. Robusta flavour extra cappuccino that redeye latte. Cup extra shop seasonal chicory et medium americano mocha instant white. Pumpkin spice to go, caffeine siphon aged at blue mountain affogato café au lait. Robust, that, cup, plunger pot dripper grinder caffeine latte dripper. Single origin roast trifecta cinnamon mazagran aged seasonal. Steamed, chicory galão barista coffee and kopi-luwak robusta black.
-
-
                         </p>
-
                     </div>
 
                     <div class="image">
-
                         <img src="billeder/coffee-cup-mug-cafe.jpg" alt="kaffe og lys på bord">
-
-
                     </div>
                 </div>
 
                 <div class="middle_row">
-
                     <div class="image">
-
                         <img src="billeder/cup-on-wooden-table.jpeg" alt="kaffebønner">
-
                     </div>
 
                     <div class="txt">
-
                         <p>
-
                             Saucer, foam et, to go coffee cup, coffee beans viennese and doppio aged. Espresso grinder latte body cinnamon organic shop bar affogato decaffeinated. Blue mountain ut, foam caffeine, et, extra aged as seasonal est cream irish. Cappuccino ut organic steamed saucer single shot cinnamon mocha con panna single shot. Extra body whipped, a, turkish dark wings turkish sugar single shot. Rich as sweet ut, whipped spoon viennese brewed siphon. Extraction dripper barista, medium americano at breve strong cortado sugar beans. Single origin, macchiato, body siphon sweet, robust so, skinny irish instant frappuccino grounds.
-
-
-
                         </p>
-
                     </div>
-
                 </div>
             </div>
 
             <div class="bottom_row">
-
                 <img src="billeder/gren_cropped.jpg" alt="gren">
-
             </div>
-
         </div>
-
     </section>
-
-
-    <!-- Fjerde section - billeder -->
 
     <!--- Baggrundsbillede 4 sættes her --->
 
@@ -258,26 +223,24 @@
         </div>
     </div>
 
-    <!--- baggrundsbillede slut --->
 
 
 
-
-
-
+    <!-- Section - Stemnings Billeder -->
 
 
     <section id="billeder">
 
+
         <h2> Følelsen af god kaffe </h2>
 
-        <div class="sectionwrapper">
 
+        <div class="sectionwrapper">
             <div class="image">
 
 
+                <!-- Responsive Grid. 4 rækker vises på desktops og tablet. Bliver stablet på mindre devices og mobil visning (100% width) -->
 
-                <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
                 <div class="w3-row-padding w3-center">
                     <div class="w3-col m3">
                         <img src="/billeder/12billeder/01.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Smiley Kaffe">
@@ -312,7 +275,6 @@
                     <div class="w3-col m3">
                         <img src="/billeder/12billeder/08.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Kaffekop">
                     </div>
-
                 </div>
 
                 <div class="w3-row-padding w3-center w3-section">
@@ -331,52 +293,14 @@
                     <div class="w3-col m3">
                         <img src="/billeder/12billeder/12.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Working Coffee">
                     </div>
-
                 </div>
-
             </div>
-
-
-
         </div>
-
-
-        <!-------------------- JAVASCRIPT--------------------->
-
-        <script>
-            function toggleFunction() {
-                var x = document.getElementById("navDemo");
-                if (x.className.indexOf("w3-show") == -1) {
-                    x.className += " w3-show";
-                } else {
-                    x.className = x.className.replace(" w3-show", "");
-                }
-            }
-
-            window.onscroll = function() {
-                myFunction()
-            };
-
-            function myFunction() {
-                var navbar = document.getElementById("myNavbar");
-                if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-                    navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-                } else {
-                    navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-                }
-            }
-
-        </script>
-
-        <!-----------------JAVASCRIPT SLUT------------------->
 
     </section>
 
 
-    <!--------- Femte section - Kontakt------------------->
-
-
-    <!--- Baggrundsbillede 5 sættes her --->
+    <!------ Baggrundsbillede 5 sættes her ------>
 
     <div class="bgimg-5 w3-display-container w3-opacity-min">
         <div class="w3-display-middle" style="white-space:nowrap;">
@@ -384,70 +308,77 @@
         </div>
     </div>
 
-    <!--- baggrundsbillede slut --->
-
-
+    <!------ Section KONTAKT ------>
 
     <section id="kontakt">
-
-
         <p class="w3-center"><em>Vi glæder os til at høre fra dig! </em></p>
-
-
         <div class="sectionwrapper">
+
 
 
             <div class="column_1">
 
-                <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Denmark, DK<br>
-                <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Mobil: 20700250 <br>
-                <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: jacob@gramkaffe.dk<br>
-            </div>
+                <div class="column">
 
 
-            <div class="column_2">
+                    <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Denmark, DK<br>
+                    <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Mobil: 20700250 <br>
+                    <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: jacob@gramkaffe.dk<br>
+                </div>
 
 
-                <p><em> Sving forbi til en kop <i class="fa fa-coffee"></i>, eller skriv en besked: </em></p>
-                <form action="/action_page.php" target="_blank">
-                    <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-                        <div class="w3-half">
-                            <input class="w3-input w3-border" type="text" placeholder="Navn" required name="Navn">
-                        </div>
-                        <div class="w3-half">
-                            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-                        </div>
-                    </div>
-                    <input class="w3-input w3-border" type="text" placeholder="Besked" required name="Besked">
-                    <button class="w3-button w3-black w3-right w3-section" type="submit">
+
+                <div class="column_2">
+
+
+                    <div class="column">
+
+                        <p><em> Sving forbi til en kop <i class="fa fa-coffee"></i>, eller skriv en besked: </em></p>
+                        <form action="/action_page.php" target="_blank">
+                            <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                                <div class="w3-half">
+                                    <input class="w3-input w3-border" type="text" placeholder="Navn" required name="Navn">
+                                </div>
+                                <div class="w3-half">
+                                    <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+                                </div>
+                            </div>
+                            <input class="w3-input w3-border" type="text" placeholder="Besked" required name="Besked">
+                            <button class="w3-button w3-black w3-right w3-section" type="submit">
           <i class="fa fa-paper-plane"></i> SEND BESKED
         </button>
-                </form>
+
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
-
     </section>
 
 
-    <!----------FOOTER------------>
-
-
-
+    <!---------- FOOTER ------------>
     <footer>
         <div class="til_top">
+
             <a href="#home"><i class="fa fa-arrow-up">Til Top</i></a>
+
         </div>
 
-        <p> <strong>
+        <div class="sociale_medier">
 
             <a href="https://www.facebook.com/Gramkaffe/">  <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
             <a href="https://www.linkedin.com/company/10271096/">
              <i class="fa fa-linkedin w3-hover-opacity"></i></a>
-             <a href="https://www.instagram.com/gramkaffe/"><i class="fa fa-instagram w3-hover-opacity"></i>
-            </a>  </strong>
-        </p>
+            <a href="https://www.instagram.com/gramkaffe/"><i class="fa fa-instagram w3-hover-opacity"></i>
+            </a>
+
+        </div>
+
 
     </footer>
+
+
+
 
 </body>
 
